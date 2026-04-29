@@ -23,7 +23,7 @@ Database,MySQL
 Editor,Visual Studio Code
 
 
-#🛠 Installation Guide
+# 🛠  Installation Guide
 Follow these steps to set up the AgriFlow ecosystem, from the local web server to the hardware firmware.
 
 1. Web Dashboard Setup (PHP & MySQL)
