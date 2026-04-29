@@ -23,7 +23,7 @@ Database,MySQL
 Editor,Visual Studio Code
 
 
-🛠 Installation Guide
+#🛠 Installation Guide
 Follow these steps to set up the AgriFlow ecosystem, from the local web server to the hardware firmware.
 
 1. Web Dashboard Setup (PHP & MySQL)
@@ -47,7 +47,7 @@ Connection Check:
 
 Ensure your config.php or database connection file in the htdocs/agriflow_web folder matches your local database credentials (usually root with no password).
 
-2. Hardware Setup (Arduino IDE)
+# 2. Hardware Setup (Arduino IDE)
 Before uploading, ensure you have the ESP8266 board library installed in your Arduino IDE.
 
 Open Project:
