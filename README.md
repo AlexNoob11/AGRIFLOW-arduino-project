@@ -13,7 +13,11 @@ Cloud Integration: Monitor your fields from anywhere in the world via a web-base
 
 #  Component,Technology
 Microcontroller,ESP8266 (NodeMCU)
+
 Firmware,C++ (Arduino IDE)
+
 Backend,PHP 8.x
+
 Database,MySQL
+
 Editor,Visual Studio Code
