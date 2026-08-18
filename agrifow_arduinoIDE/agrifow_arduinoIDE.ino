@@ -5,9 +5,9 @@
 #include <WiFiClient.h>
 
 // --- CONFIGURATION ---
-const char* ssid = "ZTE_2.4G_S5LKD4";
-const char* password = "11756oplok";
-const char* serverUrl = "http://192.168.1.8/project1/arduino_sync.php";
+const char* ssid = "ZTE_2.4G_S5LKD4"; // change with ur actual ssid
+const char* password = "11756oplok";  // your actual wifi password
+const char* serverUrl = "http://192.168.1.8/project1/arduino_sync.php"; // your actual serverUrl or directory
 
 #define RX_PIN 13     // D7
 #define TX_PIN 12     // D6
@@ -47,7 +47,7 @@ void setup() {
 }
 
 void loop() {
-  // 🔒 SAFETY: if WiFi lost → FORCE OFF pump
+  // SAFETY: if WiFi lost → FORCE OFF pump
   if (WiFi.status() != WL_CONNECTED) {
     digitalWrite(RELAY_PIN, PUMP_OFF);
     Serial.println("WiFi lost -> Pump OFF");
@@ -108,7 +108,7 @@ void processCommand(String command) {
 
   int pumpCmd = command.substring(sep + 1).toInt();
 
-  // 🛡️ 10-SECOND BOOT SAFETY
+  // 10-SECOND BOOT SAFETY
   if (millis() - bootTime < 10000) {
     Serial.println("System Booting... Locking Pump OFF for safety.");
     digitalWrite(RELAY_PIN, PUMP_OFF);
