@@ -1,5 +1,5 @@
 <?php
-session_start(); // Start the session to remember the user
+session_start();
 
 $host = "localhost";
 $user = "root";
