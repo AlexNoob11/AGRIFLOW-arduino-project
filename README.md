@@ -82,3 +82,125 @@ Click the Upload button (right arrow icon). Wait for the "Done uploading" messag
 
 <img width="2048" height="1156" alt="Messenger_creation_27AFCFF9-B898-4B58-85E1-6C264B5EEC62" src="https://github.com/user-attachments/assets/f022533e-04ab-4e4a-8ddf-5d1bf65c87a5" />
 
+# How to setup and connect
+# ✅ 🔌 FULL WIRING (FINAL CHECKLIST)
+
+## ⚡ 1. AC ➔ POWER SUPPLY
+* **L** ➔ Live (from plug)
+* **N** ➔ Neutral
+
+✔ This part is correct from your description.
+
+---
+
+## ⚡ 2. 12V DC SIDE (POWER SUPPLY OUTPUT)
+
+| Power Supply | Connects To |
+| :--- | :--- |
+| **+V** | Relay COM + Buck VIN+ |
+| **-V** | Pump - + Buck VIN- |
+
+---
+
+## 💧 3. PUMP + RELAY (HIGH POWER SIDE)
+
+| Relay Pin | Connect to |
+| :--- | :--- |
+| **COM** | +V (power supply) |
+| **NO** | Pump + |
+| **Pump -** | -V (power supply) |
+
+✔ This means pump runs ON only when relay triggers 🟩
+
+---
+
+## 🔋 4. BUCK CONVERTER (12V ➔ 5V)
+
+| Buck Pin | Connect to |
+| :--- | :--- |
+| **VIN+** | +V |
+| **VIN-** | -V |
+| **VOUT+** | Breadboard RED rail |
+| **VOUT-** | Breadboard BLUE rail |
+
+✔ Set output to **~5.0V–5.2V**
+
+---
+
+## 🔴🔵 5. BREADBOARD POWER
+
+All devices connect here:
+
+### RED rail (5V):
+* NodeMCU **VIN**
+* Relay VCC
+* RS485 VCC
+* Sensor **Brown**
+
+### BLUE rail (GND):
+* NodeMCU **GND**
+* Relay **GND**
+* RS485 **GND**
+* Sensor **Black**
+
+✔ ALL grounds must be connected together
+
+---
+
+## 🧠 6. NODEMCU CONNECTIONS
+
+| NodeMCU Pin | Connect to |
+| :--- | :--- |
+| **VIN** | RED rail |
+| **GND** | BLUE rail |
+| **D1** | Relay IN |
+| **D6** | RS485 TXD |
+| **D7** | RS485 RXD |
+
+---
+
+## 📡 7. RS485 MODULE
+
+| RS485 Pin | Connect to |
+| :--- | :--- |
+| **VCC** | RED rail |
+| **GND** | BLUE rail |
+| **TXD** | D6 |
+| **RXD** | D7 |
+| **A+** | Sensor Yellow |
+| **B-** | Sensor Blue |
+
+---
+
+## 🌱 8. ZTS SENSOR
+
+| Wire | Connect to |
+| :--- | :--- |
+| **Brown** | 5V |
+| **Black** | GND |
+| **Yellow** | A+ |
+| **Blue** | B- |
+
+---
+
+## ⚠️ FINAL HARD CHECK (DO THIS BEFORE POWER)
+
+* ✔ Relay VCC NOT on GND
+* ✔ Relay GND NOT on D1
+* ✔ RS485 TX/RX crossed correctly
+* ✔ Sensor polarity correct
+* ✔ No exposed wires touching
+
+---
+
+## 💻 📝 FULL WORKING CODE (NodeMCU ESP8266)
+
+This will:
+* Read ZTS sensor via RS485 (Modbus)
+* Print values
+* Turn pump ON/OFF (test)
+
+### 📦 Install Library FIRST:
+In Arduino IDE, ⚡ install **ModbusMaster**
+
+
