@@ -82,7 +82,6 @@ Click the Upload button (right arrow icon). Wait for the "Done uploading" messag
 
 <img width="2048" height="1156" alt="Messenger_creation_27AFCFF9-B898-4B58-85E1-6C264B5EEC62" src="https://github.com/user-attachments/assets/f022533e-04ab-4e4a-8ddf-5d1bf65c87a5" />
 
-# How to setup and connect
 # ✅ 🔌 FULL WIRING (FINAL CHECKLIST)
 
 ## ⚡ 1. AC ➔ POWER SUPPLY
