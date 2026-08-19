@@ -67,6 +67,8 @@ Before uploading, ensure you have the ESP8266 board library installed in your Ar
 
 ## 📋 Materials Needed
 
+<img width="2304" height="4080" alt="IMG20260419154435" src="https://github.com/user-attachments/assets/29cc75eb-bacc-4a8e-ab12-1ee387a8c9e4" />
+
 <img width="2304" height="4080" alt="IMG20260419154435" src="https://github.com/user-attachments/assets/5b0c3e0e-2b97-4e22-a06a-2c87dbe4cee8" />
 | **VIN-** | -V |
 | **VOUT+** | Breadboard RED rail |
