@@ -72,3 +72,13 @@ Input your Wi-Fi details and the local IP address of your computer (running the 
 Upload:
 
 Click the Upload button (right arrow icon). Wait for the "Done uploading" message.
+
+
+# Materials Needed
+
+
+<img width="2304" height="4080" alt="IMG20260419154435" src="https://github.com/user-attachments/assets/5b0c3e0e-2b97-4e22-a06a-2c87dbe4cee8" />
+
+
+<img width="2048" height="1156" alt="Messenger_creation_27AFCFF9-B898-4B58-85E1-6C264B5EEC62" src="https://github.com/user-attachments/assets/f022533e-04ab-4e4a-8ddf-5d1bf65c87a5" />
+
