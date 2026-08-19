@@ -25,8 +25,7 @@ Editor,Visual Studio Code
 
 ## 🛠  Installation Guide
 Follow these steps to set up the AgriFlow ecosystem, from the local web server to the hardware firmware.
-
-1. Web Dashboard Setup (PHP & MySQL)
+# 1. Web Dashboard Setup (PHP & MySQL)
 To host the monitoring dashboard, you will need a local server environment like XAMPP or WAMP.
 
 Deploy Source Code:
